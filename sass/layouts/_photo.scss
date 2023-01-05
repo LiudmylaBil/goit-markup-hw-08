@@ -20,11 +20,12 @@ margin-bottom: 50px;
 
 .photo-gallery {
     position: relative;
-}
-
-.photo-gallery:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;
 }
+}
+
+
 
 .photo-text {
     position: absolute;
