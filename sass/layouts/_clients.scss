@@ -4,13 +4,12 @@ display: flex;
 }
 
 .client-link {
-display: flex;
 width: 170px;
 height: 92px;
 left: 215px;
 top: 2490px;
 justify-content: center;
-align-items: center;
+@extend %flex-align;
 border: 1px solid #AFB1B8;
 color: #AFB1B8;
 border-radius: 4px;

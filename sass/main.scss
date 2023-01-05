@@ -1,6 +1,8 @@
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/vars";
+@import "./utils/plaseholder";
+@import "./utils/mixin";
 @import "./components/conteiner";
 @import "./components/section";
 
@@ -10,8 +12,7 @@
 @import "./layouts/hero";
 @import "./layouts/features";
 @import "./layouts/photo";
-@import "./layouts/team-s";
-
+@import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/footer";
 @import "./layouts/modal";
@@ -20,3 +21,5 @@
 
 @import "./layouts/portfolio-hero";
 @import "./layouts/portfolio-works"
+
+
