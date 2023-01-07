@@ -83,6 +83,12 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   border-bottom: 1px solid #eee;
 }
 
+@media screen and (max-width: 767px) {
+  .main-nav {
+    height: 60px;
+  }
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -201,6 +207,44 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   background-position: center;
   max-width: 1600px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-tablet_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-tablet_result.jpg);
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-mobile@2x_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-mobile@2x_result.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-tablet_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-tablet_result.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-tablet@2x_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-tablet@2x_result.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-desktop_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-desktop_result.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-desktop@2x_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-desktop@2x_result.jpg);
+  }
 }
 
 .hero-title {
@@ -557,6 +601,50 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .conteiner-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-section {
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer-logo {
@@ -640,6 +728,12 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 .footer-soc {
   margin-top: 0;
   margin-left: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-bottom: 0;
+  }
 }
 
 .footer-soc-list {
@@ -685,6 +779,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 }
 
 .footer-mailing-title {
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -693,6 +788,11 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   text-transform: uppercase;
   color: var(--next-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing-title {
+    text-align: start;
+  }
 }
 
 .footer-modal-input {
@@ -713,7 +813,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   height: 50;
   font-style: normal;
   font-weight: 700;
-  font-size: 6px;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   -webkit-box-pack: center;
@@ -854,6 +954,14 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 
 .modal-input-group {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-input-group {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
 }
 .modal-input-group label {
   display: block;

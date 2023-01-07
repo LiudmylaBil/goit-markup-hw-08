@@ -7,6 +7,10 @@
 
 .main-nav {
 @extend %flex-align;
+
+@media screen and (max-width: 767px) {
+        height: 60px;
+    }
 }
 
 .header-logo {
