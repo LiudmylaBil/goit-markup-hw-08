@@ -4,6 +4,7 @@
     top: 0;
     width: 100%;
     height: 100%;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &.is-hidden .modal {
@@ -16,13 +17,23 @@ transform: translate(-50%, -50%) scale(0);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    // max-width: 528px;
+    // min-height: 581px;
     background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 609px;
+
+
+    @media screen and (min-width: 1200px) {
+            max-width: 528px;
+            max-height: 581px;
+        }
+
 }
 
 
@@ -96,7 +107,6 @@ color: #212121;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        margin-bottom: 30px;
     }
     
     & label {
@@ -157,10 +167,18 @@ label.modal-politic-label {
     @extend %flex-align;
     @include font(400, 14px, 1.71, 0.03em);
 color: #757575;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+    }
+
 }
 
 .modal-politic-label::before {
     content: "";
+        display: inline-block;
     width: 16px;
     height: 16px;
     border: 2px solid #000000;
@@ -198,6 +216,7 @@ margin-left: 4px;
     background: var(--hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-left: 124px;
-    margin-right: 124px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
