@@ -9,6 +9,9 @@ background-size: cover;
 background-position: center;
 max-width: 1600px;
 margin: 0 auto;
+background-position: center;
+width: 100%;
+
 
 @media screen and (max-width: 768px) {
     background-image:linear-gradient(to right, hsl(235deg 11% 24% / 40%), hsl(235deg 11% 24% / 40%)), url(../images/hero/header-tablet_result.jpg);
@@ -49,10 +52,14 @@ margin: 0 auto;
 }
 
 .hero-title {
-    @include font(900, 44px, 1.36, 0.06em);
+   @include font(900, 26px, 1.61, 0.06em);
+    
 color: var(--next-color);
 text-transform: uppercase;
-margin-bottom: 30px;  
+margin-bottom: 30px; 
+@media screen and (min-width: 1200px) {
+  @include font(900, 44px, 1.36, 0.06em);
+} 
 }
 
 .hero-btn {
@@ -67,4 +74,6 @@ margin: 0 auto;
 display: inline-block;
 padding: 10px 24px;
 min-width: 200px;
+
+
 }

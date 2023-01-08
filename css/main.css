@@ -207,6 +207,8 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   background-position: center;
   max-width: 1600px;
   margin: 0 auto;
+  background-position: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -249,12 +251,20 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   color: var(--next-color);
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero-btn {
@@ -323,7 +333,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 }
 
 .features-icons {
-  width: 270px;
+  width: 100%;
   height: 120px;
   left: 215px;
   top: 774px;
@@ -438,7 +448,6 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 }
 
 .team-gallery {
-  width: 450px;
   margin: 15px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -504,6 +513,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 
 .team img {
   margin: 0 auto;
+  width: 100%;
 }
 
 .teams-soc-icons {
@@ -768,9 +778,14 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 }
 
 .footer-mailing-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .mailing-list {
@@ -806,6 +821,12 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   padding-left: 16px;
   margin-right: 12px;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-modal-input {
+    margin-bottom: 0;
+  }
 }
 
 .footer-button {

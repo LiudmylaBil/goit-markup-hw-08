@@ -142,13 +142,16 @@ margin-top: 12px;
 
 
 .footer-mailing-list {
-display: flex;
+display: block;
+ @media screen and (min-width: 1200px) {
+        display: flex;
+        }
 }
 
 .mailing-list {
     margin-left: 93px;
     margin-top: 12px;
-
+  
     
 }
 
@@ -175,6 +178,10 @@ background: #2F303A;
 padding-left: 16px;
 margin-right: 12px;
 cursor: pointer;
+    margin-bottom: 20px;
+     @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
 }
 
 .footer-button {
