@@ -457,7 +457,8 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
     width: 100%;
   }
 }
-.fff .mobile-menu-social {
+
+.mobile-menu-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,11 +470,11 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   margin-top: 64px;
 }
 @media screen and (min-width: 768px) {
-  .fff .mobile-menu-social {
+  .mobile-menu-social {
     display: none;
   }
 }
-.fff .mobile-menu-social_item {
+.mobile-menu-social_item {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 500;
@@ -481,35 +482,35 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   color: var(--accent-color);
   padding-right: 10px;
 }
-.fff .mobile-menu-social_item:last-child {
+.mobile-menu-social_item:last-child {
   padding-left: 0;
 }
-.fff .mobile-menu-social_item:not(:last-child):after {
+.mobile-menu-social_item:not(:last-child):after {
   content: "|";
   width: 1px;
   height: 100%;
   color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
-.fff .mobile-menu-social_link.link {
+.mobile-menu-social_link.link {
   color: var(--hover-color);
 }
-.fff .contacts {
+
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 767px) {
-  .fff .contacts {
+  .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-top: 300px;
   }
 }
 @media screen and (min-width: 768px) {
-  .fff .contacts {
+  .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -520,14 +521,14 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   }
 }
 @media screen and (min-width: 1200px) {
-  .fff .contacts {
+  .contacts {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
 }
-.fff .contacts__item {
+.contacts__item {
   display: inline-block;
   font-weight: 500;
   font-size: 14px;
@@ -535,36 +536,41 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   letter-spacing: 0.02em;
 }
 @media screen and (max-width: 767px) {
-  .fff .contacts__item {
+  .contacts__item {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__item__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) {
-  .fff .contacts__item:first-child {
+  .contacts__item:first-child {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fff .contacts__item:first-child {
+  .contacts__item:first-child {
     margin-right: 30px;
     margin-bottom: 0;
     padding: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .fff .contacts .contacts__item--big-text .link {
+  .contacts .contacts__item--big-text .link {
     font-weight: 500;
     font-size: 30px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--hover-color);
+    margin-bottom: 32px;
   }
 }
-.fff .contacts__link.link {
+.contacts__link.link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,10 +581,10 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
-.fff .contacts__link.link.link:hover {
+.contacts__link.link.link:hover {
   color: var(--accent-color);
 }
-.fff .contacts__icon {
+.contacts__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,7 +593,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   fill: currentColor;
 }
 @media screen and (max-width: 767px) {
-  .fff .contacts__icon {
+  .contacts__icon {
     display: none;
   }
 }
