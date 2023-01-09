@@ -6,7 +6,10 @@
 }
 
 .main-nav {
-@extend %flex-align;
+// @extend %flex-align;
+// 
+    display: flex;
+    align-items: center;
 
 @media screen and (max-width: 767px) {
         height: 60px;
@@ -22,6 +25,7 @@
 font-family: 'Raleway', sans-serif;
 @include font(700, 26px, 1.19, 0.03em);
 color: #000000;
+padding: 16 0;
 }
 
 
@@ -74,7 +78,7 @@ align-items: center;
     // & .item + .item {
     // margin-left: 40px;
     // }
-        @media screen and (max-width: 767px)
+        @media screen and (max-width: 768px)
     {display: none;}
         @media screen and (min-width: 768px){
             display: block;
@@ -303,14 +307,14 @@ margin-right: 50px;
 }
 
 .fff {
+display: none;
            @media screen and (min-width: 768px) {                                                                                                                                  
             display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 
-    } 
-    }
+   }
 // ------------------------------------//----------
 .mobile-menu-social {
     display: flex;

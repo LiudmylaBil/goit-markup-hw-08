@@ -166,7 +166,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .kontakts-list {
     display: none;
   }
@@ -435,6 +435,9 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   margin-left: 10px;
 }
 
+.fff {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .fff {
     display: -webkit-box;
@@ -447,6 +450,11 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fff {
+    display: none;
   }
 }
 
@@ -746,6 +754,12 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features-title {
+    text-align: start;
+  }
 }
 
 .features-text {
@@ -947,7 +961,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 }
 
 .client-link {
-  width: 210px;
+  width: 100%;
   height: 92px;
   left: 215px;
   top: 2490px;
@@ -1534,7 +1548,7 @@ label.modal-politic-label {
   margin-top: 20px;
   margin-left: 12px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;

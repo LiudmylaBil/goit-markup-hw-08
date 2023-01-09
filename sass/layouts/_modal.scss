@@ -165,7 +165,7 @@ label.modal-politic-label {
     margin-top: 20px;
     margin-left: 12px;
     @extend %flex-align;
-    @include font(400, 14px, 1.71, 0.03em);
+    @include font(400, 12px, 1.71, 0.03em);
 color: #757575;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
