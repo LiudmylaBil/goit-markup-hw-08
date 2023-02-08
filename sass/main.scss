@@ -1,11 +1,11 @@
-@import "./base/reset";
-@import "./base/common";
+@import "./utils/reset";
 @import "./utils/vars";
-@import "./utils/plaseholder";
+@import "./utils/common";
+@import "./utils/conteiner";
 @import "./utils/mixin";
-@import "./components/conteiner";
-@import "./components/section";
-
+@import "./utils/section";
+@import "./utils/portfolio-main";
+@import "./utils/placeholder";
 
 
 @import "./layouts/header";
@@ -15,11 +15,9 @@
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/footer";
-@import "./layouts/modal";
-
-
 
 @import "./layouts/portfolio-hero";
-@import "./layouts/portfolio-works"
+@import "./layouts/portfolio-works";
 
-
+@import "./components/mobile-menu";
+@import "./components/modal";

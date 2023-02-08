@@ -9,25 +9,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-<link rel="stylesheet" href="./css/styles.css">
+<!-- <link rel="stylesheet" href="./css/styles.css"> -->
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!--Шапка сайту-->
- <header class="header">
+    <header class="header">
         <div class="conteiner main-nav">
-        <a href="index.html" lang="en" class="header-logo link"><span class="span-logo">Web</span>Studio</a>
-
-        <div class="fff">
- <nav class="header-nav">
-            <ul class="header-list list">
-            <li class="item"><a href="./index.html" class="header-link link">Студія</a></li>
-                <li class="item"><a href="./portfolio.html" class="header-link link carrent">Портфоліо</a></li>
-                <li class="item"><a href="" class="header-link link">Контакти</a></li>
+        <a href="index.html" lang="en" class="logo link"><span class="logo__span">Web</span>Studio</a>
+        <button type="button" class="modal-menu-oupen js-open-menu">
+            <svg class="modal-menu-oupen__icon"  width="40" height="40">
+                <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+        </button>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="item"><a href="./index.html" class="navigation__link link ">Студія</a></li>
+                <li class="item"><a href="./portfolio.html" class="navigation__link link carrent">Портфоліо</a></li>
+                <li class="item"><a href="" class="navigation__link link">Контакти</a></li>
             </ul>
         </nav>
             
-            <ul class="list kontakts-list">
+                 <ul class="list kontakts-list">
                 <li class="item"><a href="mailto:info@devstudio.com" class="header-mail link">
                     <svg width="16" height="12" class="header-icons">
                             <use href="./images/icons.svg#icon-mail"></use>
@@ -39,30 +42,15 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
-        </div>
-       
-            <button
-            class="menu-button is-open"
-            type="button"
-            aria-expanded="false"
-            aria-controls="nav-container"
-            data-menu-button
-        >
-            <svg class="" width="40" height="40" aria-label="swtcher">
-            <use
-            class="icon-cross"
-            href="./images/icons.svg#icon-menu_40px"
-            ></use>
-            <use
-            class="icon-menu"
-            href="./images/icons.svg#icon-close_40px"
-            ></use>
-            </svg>
-        </button>
-
-        
-        <div class="nav-container" id="nav-container" data-menu>
-            <nav class="site-nav">
+        </div> 
+        <div class="mobile-menu js-menu-container">
+            <div class="conteiner mobile-menu__conteiner js-menu-container">
+                <button class="mobile-menu__close-btn js-close-menu">
+                    <svg class="mobile-menu__close-icon" width="40"     height="40">
+                    <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="site-nav">
             <ul class="site-nav__list list">
             <li class="site-nav__item item">
             <a href="./index.html" class="site-nav__link link link--current"
@@ -107,13 +95,11 @@
             <li class="mobile-menu-social_item">
               <a href="" class="mobile-menu-social_link link">LinkedIn</a>
             </li>
-          </ul></div>
-            
-        </div>
-        </div>    
+          </ul>
+            </div>
+        </div>   
     </header>
     <main>
-
         <!-- Герой портфоліо -->
         <section class="portfolio-main">
             <div class="conteiner">
@@ -227,9 +213,9 @@
         </div>
     </main>
     <!--Футер-->
-    <footer class="footer">
+     <footer class="footer">
         <div class="conteiner conteiner-section">
-            <div class="footer-cection">
+            <div class="footer-section">
             <a href="index.html" lang="en" class="footer-logo link"><span class="footer-span-logo">Web</span>Studio</a>
             <address>
                 <ul class="footer-adress list">
@@ -271,9 +257,10 @@
             
             <form action="" class="mailing-list">
                 
-                <p class="footer-mailing-title">Підпишіться на розсилку</p>
+                
                 <div class="footer-mailing-list">
-                    <div class="">
+                    <div class="f-m-t">
+                        <p class="footer-mailing-title">Підпишіться на розсилку</p>
                         <input type="email" class="footer-modal-input" placeholder="E-mail" name="email" id="email">
                     </div>
                     <button type="submit" class="footer-button  button">Підписатися
@@ -288,4 +275,4 @@
         </div>
     </footer>
 </body>
-</html> -->
+</html>

@@ -1,7 +1,7 @@
-
 .features {
 background-color: var(--next-color);    
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -16,63 +16,79 @@ background-color: var(--next-color);
     overflow: hidden;
 }
 
-.features-list {
+.features__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    list-style: none;
-    margin: -15px;
+    gap: 30px;
 }
 
-.features-items {
-    width: 450px;
-    margin: 15px;
-        @media screen and (min-width: 768px) {
-            width: calc((100% - 60px) / 2);
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 120px) / 4);
-        }
-    }
+.features__items {
+    width: 100%;
+}
 
-    
+// .features__items:not(:last-child) {
+//     margin-right: 30px;
+// }
 
-.features-icons {
+.features__icons {
+@extend %flex-align;
 width: 100%;
 height: 120px;
-left: 215px;
-top: 774px;
 background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
 justify-content: center;
-@extend %flex-align;
 }
+
+// .features__icons {
+// @extend %flex-align;
+// width: 100%;
+// height: 120px;
+// left: 215px;
+// top: 774px;
+// background: #F5F4FA;
+// border-radius: 4px;
+// margin-bottom: 30px;
+// justify-content: center;
+// }
 
 .svg-icons {
 background-position: center;
 }
 
-.features-title {
-    @include font(null, 14px, 1.14, 0.03em);
+.features__title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
 color: var(--text-color); 
-margin-bottom: 10px; 
-    text-align: center;
-    @media screen and (min-width: 768px) {
-text-align: start;
-}   
+margin-bottom: 10px;   
 }
 
-.features-text {
-    @include font(null, 14px, 1.71, 0.03em);
+.features__text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 color: var(--secondery-text-color);
-    margin-top: 10px;
-    margin-bottom: 30;
-margin-left: auto;
-margin-right: auto;
-    font-size: 14px;
-    line-height: 1.7;
+}
+
+@media screen and (max-width: 767px) {
+    .features__title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features__items {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .features__items {
+        width: calc((100% - 90px) / 4);
+    }
 }
