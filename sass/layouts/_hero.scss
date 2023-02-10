@@ -45,13 +45,20 @@ line-height: 1.88;
 @extend %flex-align;
 letter-spacing: 0.06em;
 color: var(--next-color);
-background-color: var(--hover-color);
+background-color: #188ce8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin: 0 auto;
 display: inline-block;
 padding: 10px 24px;
 min-width: 200px;
+&:hover,
+&:focus {
+    cursor: pointer;
+    background-color: var(--hover-color);
+    color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 }
 
 @media screen and (min-width: 768px) {

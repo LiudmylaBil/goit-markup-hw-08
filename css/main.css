@@ -106,8 +106,6 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   }
 }
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   background-color: var(--next-color);
   border-bottom: 1px solid #ECECEC;
 }
@@ -157,7 +155,7 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
     position: absolute;
     width: 100%;
     height: 4px;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     background: var(--hover-color);
     border-radius: 2px;
@@ -259,13 +257,19 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--next-color);
-  background-color: var(--hover-color);
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin: 0 auto;
   display: inline-block;
   padding: 10px 24px;
   min-width: 200px;
+}
+.challenge__btn:hover, .challenge__btn:focus {
+  cursor: pointer;
+  background-color: var(--hover-color);
+  color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -744,7 +748,6 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 @media screen and (min-width: 1200px) {
   .mailing-list {
     margin-left: 93px;
-    margin-top: 12px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -956,6 +959,13 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+  }
+  .mobile-menu > .mobile-menu__conteiner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -1182,9 +1192,9 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 1px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1193,6 +1203,12 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   width: 100%;
   max-width: 450px;
   max-height: 609px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1214,18 +1230,15 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   cursor: pointer;
 }
 
+.modal-close:focus,
+.modal-close:hover {
+  fill: var(--hover-color);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-.mobile-menu > .mobile-menu__conteiner {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: auto;
 }
 
 .modal-heading {
@@ -1248,7 +1261,6 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   font-size: 12px;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 .modal-input:focus, .modal-input:hover {
   border-color: var(--hover-color);
@@ -1303,7 +1315,6 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   font-size: 12px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 .modal-text:focus, .modal-text:hover {
   border-color: var(--hover-color);

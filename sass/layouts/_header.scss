@@ -21,8 +21,8 @@
 }
 
 .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    // padding-top: 16px;
+    // padding-bottom: 16px;
     background-color: var(--next-color);
     border-bottom: 1px solid #ECECEC;
 }
@@ -79,7 +79,7 @@ position: relative;
     position: absolute;
 width: 100%;
 height: 4px;
-bottom: 0;
+bottom: -1px;
 left: 0;
 background: var(--hover-color);
 border-radius: 2px;
