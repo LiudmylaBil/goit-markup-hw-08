@@ -61,7 +61,7 @@ min-width: 200px;
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 461px) {
 .hero {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-tablet.jpg);
 }
@@ -75,11 +75,7 @@ min-width: 200px;
 }
 
 
-@media screen and (min-width: 1200px) {
-    .challenge {
-font-size: 44px;
-line-height: 1.36;
-    }
+@media screen and (min-width: 769px) {
     .hero {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-desk.jpg);
 }
@@ -91,3 +87,10 @@ line-height: 1.36;
 }
 }
 }
+
+@media screen and (min-width: 1200px) {
+    .challenge {
+font-size: 44px;
+line-height: 1.36;
+    }
+    }
