@@ -219,8 +219,8 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
 }
 .hero {
   background-color: #C4C4C4;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-mob.jpg);
   background-repeat: no-repeat;
@@ -293,6 +293,10 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   .challenge {
     font-size: 44px;
     line-height: 1.36;
